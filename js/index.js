@@ -11,8 +11,8 @@ function crearCatalogoJuegos(productos) {
         nuevosJuegos.innerHTML = `
         <img src='${producto.img}'>
         <h2>${producto.nombre}</h2>
-        <h3>${producto.descripcion}</h3>
-        <p>${producto.precioentero}.<span>${producto.preciocentavos}</span></p>
+        <p>${producto.descripcion}</p>
+        <div class="precio">u$s ${producto.precioentero}.<span>${producto.preciocentavos}</span></div>
         <button>Agregar al carrito</button>
         `
 

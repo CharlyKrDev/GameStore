@@ -1,4 +1,4 @@
-:root{
+:root {
     --font-size-main: 24px
 }
 
@@ -7,24 +7,39 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.733);
 
-} & a{
-    text-decoration: none;
-    color: white;
-}& a:hover{
-    color:burlywood
 }
-body{
+
+& a {
+    text-decoration: none;
+}
+
+& a:hover {
+    color: burlywood
+}
+
+body {
     display: flex;
     flex-direction: column;
     background-color: #242424;
+    height: 100%;
 }
- main{
-    background-color: aliceblue;
+
+#contenedorPrincipal{
+    margin: 1em auto 1em auto;
+    background-color: white;
     width: 80vw;
     margin: auto;
-} 
-main span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(../media/img/fondo.jpeg);
+
+
+}
+
+main span {
     font-size: 0.8em;
 }
 
@@ -35,27 +50,30 @@ header nav {
     justify-content: space-between;
     padding: 0 2em;
     height: 8em;
-    
+
 }
+
 header nav img {
-    height: 2rem ;}
+    height: 2rem;
+}
 
-#logo{
+#logo {
     height: 8em;
-}    
+}
 
-#carritoDeCompras{
+#carritoDeCompras {
     filter: invert(1);
-    
-} 
 
-header nav aside{
+}
+
+header nav aside {
     display: flex;
     align-items: center;
     gap: 1em;
 }
-#gamesCounter{
-    
+
+#gamesCounter {
+
     background-color: blueviolet;
     border-radius: 100%;
     display: inline-block;
@@ -63,13 +81,13 @@ header nav aside{
     aspect-ratio: 1;
     text-align: center;
     line-height: 1;
-    color: white;
     position: absolute;
 
 }
 
+
 /* FOOTER */
-footer{
+footer {
     background-color: black;
     height: 8em;
     margin-top: auto;
