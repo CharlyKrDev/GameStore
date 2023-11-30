@@ -1,31 +1,30 @@
+import { agregarAlCarrito } from "./carrito.js";
 
 
-export const contenedorCarrito = document.getElementById('contenedorCarrito')
 
-export function crearListaDeCompra() {
-    const productos = JSON.parse(localStorage.getItem('productos'));
-    console.log(productos);
-    if(productos && productos.length > 0){
-    juegosList.forEach((producto) => {
+const contenedorCatalogo = document.getElementById('contenedorJuegos')
+
+function crearCatalogoJuegos() {
+        const productos = JSON.parse(localStorage.getItem('juegosList'))
+        console.log(productos)
+        if(productos && productos.length >0){
+        productos.forEach(producto => {
         const nuevosJuegos = document.createElement('article');
         nuevosJuegos.classList = 'cardsCatalogoJuegos';
         nuevosJuegos.innerHTML = `
         <img src='${producto.img}'>
         <h2>${producto.nombre}</h2>
-        <div class="precio">u$s ${producto.precioentero}.<span>${producto.preciocentavos}</span></div>
-        <div>
-            <button>-</button>
-            <span class = 'cantidad'> 0 </span>
-            <button>+</button>
-        </div>
-
+        <p>${producto.descripcion}</p>
+        <button>-</button>
+        <span class='contador'>0</span>
+        <button>+</button>
         `
 
-        contenedorCarrito.appendChild(nuevosJuegos);
+        contenedorCatalogo.appendChild(nuevosJuegos);
         nuevosJuegos.getElementsByTagName('button')[0].addEventListener('click', ()=>agregarAlCarrito(producto));
 
     });
-   }
+}
 }
 
-crearListaDeCompra();
+crearCatalogoJuegos();
