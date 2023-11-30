@@ -1,4 +1,5 @@
 import { juegosList } from "./products.js";
+import { agregarAlCarrito } from "./carrito.js";
 
 
 
@@ -17,7 +18,7 @@ function crearCatalogoJuegos(productos) {
         `
 
         contenedorCatalogo.appendChild(nuevosJuegos);
-
+        nuevosJuegos.getElementsByTagName('button')[0].addEventListener('click', ()=>agregarAlCarrito(producto));
 
     });
 }

@@ -1,3 +1,4 @@
+
 export const juegosList = [
     {
         id: 1,
@@ -41,11 +42,11 @@ export const juegosList = [
     },
     {
         id: 6,
-        nombre: 'Residen Evil 4 - Remake',
+        nombre: 'Resident Evil 4 - Remake',
         img: "./media/img/resident_evil_4_hd_pc_cover.webp",
         precioentero: 150,
         preciocentavos:30,
-        descripcion: 'Remake del clásico Residen Evil 4.',
+        descripcion: 'Remake del clásico Resident Evil 4.',
     },
     {
         id: 7,
