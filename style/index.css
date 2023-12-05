@@ -34,9 +34,11 @@ header nav {
     justify-content: space-between;
     padding: 0 2em;
     height: 8em;
-    
 
+} & div{
+    margin-right: 10em;
 }
+
 
 header nav img {
     height: 2rem;
@@ -44,6 +46,14 @@ header nav img {
 
 #logo {
     height: 8em;
+}
+
+.contenedorCarrito{
+    margin-left: 12em;
+    position: fixed;
+    background-color: black;
+    border-radius: 2em;
+
 }
 
 #carritoDeCompras {

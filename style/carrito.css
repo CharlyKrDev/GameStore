@@ -91,3 +91,13 @@
 
         
     }
+    
+header {
+
+    margin-bottom: 8em;
+}
+
+    nav{
+    position: fixed;
+    width: 100%;
+}
