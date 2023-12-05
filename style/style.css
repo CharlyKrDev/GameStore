@@ -1,29 +1,29 @@
-
 main span {
     font-size: 0.8em;
 }
 
 
-#contenedorPrincipal{
+#contenedorPrincipal {
     height: 100%;
     width: 80vw;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image:url(../media/img/fondo.jpeg);
+    background-image: url(../media/img/fondo.jpeg);
     color: rgba(255, 255, 255, 0.733);
 
 
 
 }
+
 #contenedorJuegos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
-    
-    }
+
+}
 
 
 .cardsCatalogoJuegos {
@@ -39,10 +39,11 @@ main span {
     text-align: center;
 
 }
+
 .cardsCatalogoJuegos:hover {
     translate: 0 -10px;
     box-shadow: 0px 10px 5px 0px rebeccapurple;
-    
+
 }
 
 .cardsCatalogoJuegos h2,
@@ -56,10 +57,12 @@ p {
     font-size: 1.2em;
     color: rgb(108, 219, 17);
     font-weight: bold;
+
     & span {
-    text-decoration:line-through;
-    color:red;
-}}
+        text-decoration: line-through;
+        color: red;
+    }
+}
 
 
 .cardsCatalogoJuegos img {

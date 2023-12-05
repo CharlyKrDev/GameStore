@@ -25,20 +25,20 @@ function crearCatalogoJuegos() {
             buttonMenos.textContent = '-';
             buttonMenos.addEventListener('click', () => {
                 restarAlCarrito(producto);
-                actualizarTotales(); 
+                actualizarTotales();
                 crearCatalogoJuegos();
             });
 
             const spanContador = document.createElement('span');
             spanContador.classList = 'contador';
-            
+
             spanContador.textContent = producto.cantidad > 0 ? `${producto.cantidad}` : '';
 
             const buttonMas = document.createElement('button');
             buttonMas.textContent = '+';
             buttonMas.addEventListener('click', () => {
                 agregarAlCarrito(producto);
-                actualizarTotales(); 
+                actualizarTotales();
                 crearCatalogoJuegos();
             });
 

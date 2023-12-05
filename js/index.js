@@ -18,7 +18,7 @@ function crearCatalogoJuegos(productos) {
         `
 
         contenedorCatalogo.appendChild(nuevosJuegos);
-        nuevosJuegos.getElementsByTagName('button')[0].addEventListener('click', ()=>agregarAlCarrito(producto));
+        nuevosJuegos.getElementsByTagName('button')[0].addEventListener('click', () => agregarAlCarrito(producto));
 
     });
 }
