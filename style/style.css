@@ -1,94 +1,90 @@
-:root {
-    --font-size-main: 24px
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Montserrat, sans-serif;
-    color: rgba(255, 255, 255, 0.733);
-
-}
-
-& a {
-    text-decoration: none;
-}
-
-& a:hover {
-    color: burlywood
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: #1d1b1b;
-    height: 100%;
-}
-
-#contenedorPrincipal{
-    margin: 1em auto 1em auto;
-    background-color: white;
-    width: 80vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image:url(../media/img/fondo.jpeg);
-
-
-}
 
 main span {
     font-size: 0.8em;
 }
 
 
-header nav {
-    background-color: black;
+#contenedorPrincipal{
+    height: 100%;
+    width: 80vw;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    padding: 0 2em;
-    height: 8em;
-
-}
-
-header nav img {
-    height: 2rem;
-}
-
-#logo {
-    height: 8em;
-}
-
-#carritoDeCompras {
-    filter: invert(1);
-
-}
-
-header nav aside {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1em;
+    background-image:url(../media/img/fondo.jpeg);
+    color: rgba(255, 255, 255, 0.733);
+
+
+
 }
+#contenedorJuegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    
+    }
 
-#gamesCounter {
 
-    background-color: blueviolet;
-    border-radius: 100%;
-    display: inline-block;
-    width: 1em;
-    aspect-ratio: 1;
+.cardsCatalogoJuegos {
+
+    max-width: 15em;
+    box-shadow: 0px 0px 5px 0px rebeccapurple;
+    background-color: rgba(81, 76, 76, 0.7);
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    margin: 3em 0 3em 0;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    line-height: 1;
-    position: absolute;
 
+}
+.cardsCatalogoJuegos:hover {
+    translate: 0 -10px;
+    box-shadow: 0px 10px 5px 0px rebeccapurple;
+    
+}
+
+.cardsCatalogoJuegos h2,
+h4,
+p {
+    margin: auto 1em .4em 1em;
+}
+
+.cardsCatalogoJuegos .precios {
+    margin-top: auto;
+    font-size: 1.2em;
+    color: rgb(108, 219, 17);
+    font-weight: bold;
+    & span {
+    text-decoration:line-through;
+    color:red;
+}}
+
+
+.cardsCatalogoJuegos img {
+    aspect-ratio: .7;
+    width: 100%;
+    border: solid rgb(153, 0, 255) .1em;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
 
-/* FOOTER */
-footer {
-    background-color: black;
-    height: 8em;
-    margin-top: auto;
+.cardsCatalogoJuegos button {
+
+    background-color: #494747;
+    width: 100px;
+    height: 3.5em;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin: .5em auto 2em auto;
+    color: rgba(255, 255, 255, 0.733);
+
+}
+
+.cardsCatalogoJuegos button:hover {
+    background-color: green
 }

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/carrito.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,17 +17,23 @@
     <header>
         <nav>
             <a href="./index.html"><img src="./media/img/logo.jpg" id="logo" alt="Logo"></a>
-            <aside>
+            <div>
                 <a href="">Consola</a>
                 <a href="">PC</a>
                 <a href="./cart.html"><img id="carritoDeCompras" src="./media/img/carrito.png"
                         alt="carritoDeCompras"><span id="gamesCounter">0</span></a>
-            </aside>
+            </div>
         </nav>
     </header>
     <main id="contenedorPrincipal">
         <section id="contenedorJuegos">
 
+        </section>
+        <section id = 'cierreDeCompra'>
+            <p>Total de juegos: <span id="unidades">0</span></p>
+            <p>Total a pagar: u$s <span id="valorPrecioTotal">0</span></p>
+            <button disabled>Comprar</button>
+            <button>Reiniciar Compra</button>
         </section>
 
     </main>

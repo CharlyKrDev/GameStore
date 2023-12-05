@@ -1,68 +1,84 @@
-#contenedorJuegos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2%;
+:root {
+    --font-size-main: 24px
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
 
-.cardsCatalogoJuegos {
+}
 
-    max-width: 15em;
-    box-shadow: 0px 0px 5px 0px rebeccapurple;
-    background-color: rgba(81, 76, 76, 0.578);
-    border-radius: 20px;
-    transition: 0.2s ease-in-out;
-    margin: 3em 0 3em 0;
+& a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.733);
+
+}
+
+& a:hover {
+    color: burlywood
+}
+
+body {
     display: flex;
     flex-direction: column;
-    text-align: center;
-
+    background-color: #1d1b1b;
+    height: 100%;
 }
-.cardsCatalogoJuegos:hover {
-    translate: 0 -10px;
-    box-shadow: 0px 10px 5px 0px rebeccapurple;
+
+
+header nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    height: 8em;
     
+
 }
 
-.cardsCatalogoJuegos h2,
-h4,
-p {
-    margin: auto 1em .4em 1em;
+header nav img {
+    height: 2rem;
 }
 
-.cardsCatalogoJuegos .precio {
+#logo {
+    height: 8em;
+}
+
+#carritoDeCompras {
+    filter: invert(1);
+
+}
+
+
+header nav div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+}
+
+#gamesCounter {
+
+    background-color: blueviolet;
+    border-radius: 100%;
+    display: inline-block;
+    width: 1em;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 1;
+    position: absolute;
+
+}
+
+
+/* FOOTER */
+footer{
+    background-color: black;
+    height: 8em;
     margin-top: auto;
-    font-size: 1.2em;
-    color: rgb(108, 219, 17);
-    font-weight: bold;
-    & span {
-    font-weight: bold;
-    color: rgb(108, 219, 17);
-}}
+    color: rgba(255, 255, 255, 0.733);
 
-.cardsCatalogoJuegos img {
-    aspect-ratio: .7;
-    width: 100%;
-    border: solid rgb(153, 0, 255) .1em;
-    border-radius: 10px 10px 0 0;
-    object-fit: cover;
 }
 
-
-.cardsCatalogoJuegos button {
-
-    background-color: #494747;
-    width: 100px;
-    height: 3.5em;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    margin: .5em auto 2em auto;
-}
-
-.cardsCatalogoJuegos button:hover {
-    background-color: green
-}

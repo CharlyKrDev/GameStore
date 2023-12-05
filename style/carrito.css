@@ -1,8 +1,93 @@
-body{
-    height: 100%;
-background-color: white;
+
+#contenedorPrincipal{
+    min-height: 100vh;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url(../media/img/fondo2.jpeg);
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    font-family: 'Press start 2p';
+
+
+
 }
-main{
-    height: 800px;
-    background-color: red;
+
+#contenedorJuegos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
 }
+
+.cardsCatalogoJuegos {
+
+    width: 10em;
+    box-shadow: 0px 0px 5px 0px rebeccapurple;
+    background-color: rgba(81, 76, 76, 0.7);
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    margin: 3em 0 3em 0;
+    text-align: center;
+
+}
+
+
+.cardsCatalogoJuegos h2 {
+
+    font-size: 1em;
+    margin: 1em;
+}
+
+
+.cardsCatalogoJuegos img {
+    aspect-ratio: .7;
+    width: 100%;
+    border: solid rgb(153, 0, 255) .1em;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.cardsCatalogoJuegos button {
+    height: 1em;
+    aspect-ratio: 1;
+    background-color: #494747;
+    border-radius: .8em;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin: auto 0.4em .4em 0.4em;}
+
+.cardsCatalogoJuegos button:hover {
+    background-color: green
+}
+#cierreDeCompra{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    background-color: #49474783;
+    min-width: 35%;}
+    & p{
+        margin: .2em;
+    }& button{
+        margin: .2em;
+        color: rgba(255, 255, 255, 0.733);
+        background-color: #494747;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        height: 2em;
+        border-radius: 1em;
+
+
+    }& button:hover{
+        background-color: green
+
+        
+    }
