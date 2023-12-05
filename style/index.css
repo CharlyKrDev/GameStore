@@ -49,8 +49,7 @@ header nav img {
 }
 
 .contenedorCarrito{
-    margin-left: 12em;
-    position: fixed;
+
     background-color: black;
     border-radius: 2em;
 
@@ -92,3 +91,13 @@ footer{
 
 }
 
+@media screen and (min-width: 480px) {
+   
+    .contenedorCarrito{
+        margin-left: 12em;
+        position: fixed;
+        background-color: black;
+        border-radius: 2em;
+    
+    }
+  }

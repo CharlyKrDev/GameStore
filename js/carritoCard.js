@@ -25,21 +25,20 @@ function crearCatalogoJuegos() {
             buttonMenos.textContent = '-';
             buttonMenos.addEventListener('click', () => {
                 restarAlCarrito(producto);
-                actualizarTotales(); // Actualiza los totales antes de recrear el catálogo
+                actualizarTotales(); 
                 crearCatalogoJuegos();
             });
 
             const spanContador = document.createElement('span');
             spanContador.classList = 'contador';
             
-            // Verificar si la cantidad es mayor que cero antes de mostrar el contador
             spanContador.textContent = producto.cantidad > 0 ? `${producto.cantidad}` : '';
 
             const buttonMas = document.createElement('button');
             buttonMas.textContent = '+';
             buttonMas.addEventListener('click', () => {
                 agregarAlCarrito(producto);
-                actualizarTotales(); // Actualiza los totales antes de recrear el catálogo
+                actualizarTotales(); 
                 crearCatalogoJuegos();
             });
 
