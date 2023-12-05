@@ -25,7 +25,6 @@ body {
     flex-direction: column;
     background-color: #1d1b1b;
     height: 100%;
-    
 }
 
 
@@ -92,13 +91,24 @@ footer{
 
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
    
     .contenedorCarrito{
-        margin-left: 12em;
+        margin-left: 6.5em;
         position: fixed;
         border-radius: 2em;
     
     }
-
+    header nav {
+        z-index: 1;
+      }
   }
+
+  @media screen and (min-width: 480px) {
+    .contenedorCarrito{
+        margin-left: 10em;
+        position: fixed;
+        border-radius: 2em;
+    }
+  }
+   
