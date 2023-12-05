@@ -46,14 +46,21 @@ main span {
 
 }
 
-.cardsCatalogoJuegos h2,
-h4,
-p {
+.cardsCatalogoJuegos h2 {
+    font-size: 1em;
+    color: white;
+    margin: 2em 0 .8em 0;
+
+}
+
+.cardsCatalogoJuegos p {
     margin: auto 1em .4em 1em;
+    text-align: left;
 }
 
 .cardsCatalogoJuegos .precios {
     margin-top: auto;
+
     font-size: 1.2em;
     color: rgb(108, 219, 17);
     font-weight: bold;

@@ -13,7 +13,7 @@ function crearCatalogoJuegos(productos) {
         <img src='${producto.img}'>
         <h2>${producto.nombre}</h2>
         <p>${producto.descripcion}</p>
-        <section class="precios">u$s ${producto.precioVigente} <span class = 'precioAnterior'>${producto.precioAnterior}</span></section>
+        <section class="precios"><span class = 'precioAnterior'>u$s ${producto.precioAnterior}</span> u$s ${producto.precioVigente} </section>
         <button>Agregar al carrito</button>
         `
 

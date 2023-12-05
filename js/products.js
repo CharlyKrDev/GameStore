@@ -5,7 +5,7 @@ export const juegosList = [
         nombre: 'Mario Bros',
         img: "./media/img/Mario_Bros._NES_Cover.webp",
         precioVigente: 99,
-        precioAnterior:110,
+        precioAnterior: 110,
         descripcion: 'El clásico juego de Mario Bros lanzado en 1983 remasterizado para PC.',
     },
     {
@@ -13,7 +13,7 @@ export const juegosList = [
         nombre: 'Age of Empires II',
         img: "./media/img/Age_of_Empires_II_HD_Edition.webp",
         precioVigente: 47,
-        precioAnterior:70,
+        precioAnterior: 70,
         descripcion: 'Es un juego de estrategia en tiempo real ambientado en la edad media.',
     },
     {
@@ -21,7 +21,7 @@ export const juegosList = [
         nombre: 'Lineage 2',
         img: "./media/img/lineage-2.webp",
         precioVigente: 50,
-        precioAnterior:55,
+        precioAnterior: 55,
         descripcion: 'Es un juego de rol multijugador masivo en línea.',
     },
     {
@@ -29,15 +29,15 @@ export const juegosList = [
         nombre: 'The Elder Scrolls IV: Oblivion',
         img: "./media/img/Copertina_Oblivion.webp",
         precioVigente: 70,
-        precioAnterior:90,
-        descripcion: 'La cuarta entrega de la saga The Elder Scrolls nos trae con Oblivion una propuesta muy destacada tanto en jugabilidad como en gráficos.',
+        precioAnterior: 90,
+        descripcion: 'Oblivion nos trae una propuesta muy destacada tanto en jugabilidad como en gráficos.',
     },
     {
         id: 5,
         nombre: 'Cyberpunk 2077',
         img: "./media/img/cyberpunk2077.webp",
         precioVigente: 125,
-        precioAnterior:125,
+        precioAnterior: 125,
         descripcion: 'RPG de acción y aventura de mundo abierto ambientado en el futuro.',
     },
     {
@@ -45,7 +45,7 @@ export const juegosList = [
         nombre: 'Resident Evil 4 - Remake',
         img: "./media/img/resident_evil_4_hd_pc_cover.webp",
         precioVigente: 150,
-        precioAnterior:199,
+        precioAnterior: 199,
         descripcion: 'Remake del clásico Resident Evil 4.',
     },
     {
@@ -53,7 +53,7 @@ export const juegosList = [
         nombre: 'Hogwart Legacy - Deluxe',
         img: "./media/img/hogwarts legacy.webp",
         precioVigente: 80,
-        precioAnterior:99,
+        precioAnterior: 99,
         descripcion: 'RPG de acción y aventura de mundo abierto ambientado en el futuro.',
     },
     {
@@ -61,7 +61,7 @@ export const juegosList = [
         nombre: 'Alan Wake 2',
         img: "./media/img/alan wake 2.webp",
         precioVigente: 45,
-        precioAnterior:60,
+        precioAnterior: 60,
         descripcion: 'RPG de acción y aventura de mundo abierto ambientado en el futuro.',
     },
     {
@@ -69,7 +69,7 @@ export const juegosList = [
         nombre: 'GTA VI - PreVenta',
         img: "./media/img/gta 6.webp",
         precioVigente: 100,
-        precioAnterior:125,
+        precioAnterior: 125,
         descripcion: 'RPG de acción y aventura de mundo abierto ambientado en el futuro.',
     },
     {
@@ -77,7 +77,7 @@ export const juegosList = [
         nombre: 'Baldur`s Gate 3',
         img: "./media/img/BG3-PC-COVER.webp",
         precioVigente: 155,
-        precioAnterior:175,
+        precioAnterior: 175,
         descripcion: 'RPG de acción y aventura de mundo abierto ambientado en el futuro.',
     },
     {
@@ -85,7 +85,7 @@ export const juegosList = [
         nombre: 'Red Dead Redemption 2',
         img: "./media/img/redrendemtion ii.webp",
         precioVigente: 75,
-        precioAnterior:95,
+        precioAnterior: 95,
         descripcion: 'RPG de acción y aventura de mundo abierto ambientado en el futuro.',
     },
     {
@@ -93,7 +93,7 @@ export const juegosList = [
         nombre: 'FC24',
         img: "./media/img/fc24.webp",
         precioVigente: 69,
-        precioAnterior:99,
+        precioAnterior: 99,
         descripcion: 'RPG de acción y aventura de mundo abierto ambientado en el futuro.',
     },
 ];
