@@ -78,3 +78,8 @@ function actualizarTotales() {
     unidadesElement.innerText = unidades;
     precioTotalElement.innerText = precioTotal;
 }
+document.getElementById('reiniciarCompra').addEventListener('click', function() {
+
+    localStorage.clear();
+    location.reload();
+  });
