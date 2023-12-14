@@ -92,7 +92,7 @@ footer {
 
 }
 
-@media screen and (min-width: 375px) {
+@assets screen and (min-width: 375px) {
 
     .contenedorCarrito {
         margin-left: 8em;
@@ -106,7 +106,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 480px) {
+@assets screen and (min-width: 480px) {
     .contenedorCarrito {
         position: fixed;
     }
