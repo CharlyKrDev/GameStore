@@ -34,7 +34,7 @@ function crearCatalogoJuegos(productos) {
         preciosSection.appendChild(precioVigenteText);
 
         const buttonElement = document.createElement('button');
-        buttonElement.textContent = 'Agregar al carrito';
+        buttonElement.textContent = 'Comprar';
 
         nuevosJuegos.appendChild(imgElement);
         nuevosJuegos.appendChild(h2Element);
