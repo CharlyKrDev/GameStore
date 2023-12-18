@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/carrito.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/carrito.css">
     <title>Carrito - Gamer Store</title>
 </head>
 
@@ -29,7 +30,7 @@
         <section id='cierreDeCompra'>
             <p>Total de juegos: <span id="unidades">0</span></p>
             <p>Total a pagar: u$s <span id="valorPrecioTotal">0</span></p>
-            <button disabled>Comprar</button>
+            <button id="btnCompra">Comprar</button>
             <button id="reiniciarCompra">Reiniciar Compra</button>
         </section>
         <section id="contenedorJuegos">
@@ -41,6 +42,7 @@
     <footer>
 
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script type="module" src="./js/carritoCard.js" defer></script>
 
 

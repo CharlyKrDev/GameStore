@@ -78,8 +78,45 @@ function actualizarTotales() {
     unidadesElement.innerText = unidades;
     precioTotalElement.innerText = precioTotal;
 }
-document.getElementById('reiniciarCompra').addEventListener('click', function() {
+const reiniciarCompraBtn = document.getElementById('reiniciarCompra');
+if (reiniciarCompraBtn) {
+    reiniciarCompraBtn.addEventListener('click', function () {
+        Toastify({
+            text: "¡Haz vaciado el carrito!",
+            duration: 800,
+            close: true,
+            gravity: "top",
+            style: {
+                background: "rgba(255,0,0, 0.4)",
+            },
+        }).showToast();
+    
+        setTimeout(function() {
+            localStorage.clear();
+            location.reload();
+        }, 700);
+    });
+}
+const btnCompra = document.getElementById('btnCompra');
+    if (btnCompra){
+        btnCompra.addEventListener('click', function () {
 
-    localStorage.clear();
-    location.reload();
-  });
+    Toastify({
+        text: `¡Compra realizada correctamente!`,
+        duration: 2000,
+        close: true,
+        gravity: "top",
+        position:'left',
+        style: {
+                background: "rgba(0, 255, 0, 0.4)"
+            },
+    }).showToast();
+
+    setTimeout(function() {
+        localStorage.clear();
+        location.reload();
+    }, 2000 );
+
+});
+    }
+
