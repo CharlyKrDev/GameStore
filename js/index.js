@@ -1,6 +1,8 @@
 import { juegosList } from "./products.js";
 import { agregarAlCarrito } from "./carrito.js";
 
+
+
 const contenedorCatalogo = document.getElementById('contenedorJuegos')
 
 function crearCatalogoJuegos(productos) {
@@ -42,21 +44,9 @@ function crearCatalogoJuegos(productos) {
 
         contenedorCatalogo.appendChild(nuevosJuegos);
 
-        buttonElement.addEventListener('click', () => {
-            agregarAlCarrito(producto);
-
-
-            Toastify({
-                text: `¡${nombre} añadido al carrito!`,
-                duration: 1000, 
-                close: true,
-                gravity: "top",
-                style:{
-                    background: "linear-gradient(to right, rgba(36, 36, 36, 0.4), rgba(138, 43, 226, 0.6))"
-                },
-            }).showToast();
-        });
+        buttonElement.addEventListener('click', () => agregarAlCarrito(producto));
     });
 }
 
 crearCatalogoJuegos(juegosList);
+
