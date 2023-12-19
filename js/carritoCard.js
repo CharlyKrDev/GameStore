@@ -83,7 +83,7 @@ if (reiniciarCompraBtn) {
     reiniciarCompraBtn.addEventListener('click', function () {
         Toastify({
             text: "¡Haz vaciado el carrito!",
-            duration: 800,
+            duration: 1000,
             close: true,
             gravity: "bottom",
             style: {
@@ -94,7 +94,7 @@ if (reiniciarCompraBtn) {
         setTimeout(function() {
             localStorage.clear();
             location.reload();
-        }, 700);
+        }, 1000);
     });
 }
 const btnCompra = document.getElementById('btnCompra');
