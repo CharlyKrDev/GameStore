@@ -85,7 +85,7 @@ if (reiniciarCompraBtn) {
             text: "¡Haz vaciado el carrito!",
             duration: 800,
             close: true,
-            gravity: "top",
+            gravity: "bottom",
             style: {
                 background: "rgba(255,0,0, 0.4)",
             },
@@ -105,7 +105,7 @@ const btnCompra = document.getElementById('btnCompra');
         text: `¡Compra realizada correctamente!`,
         duration: 2000,
         close: true,
-        gravity: "top",
+        gravity: "bottom",
         position:'left',
         style: {
                 background: "rgba(0, 255, 0, 0.4)"
