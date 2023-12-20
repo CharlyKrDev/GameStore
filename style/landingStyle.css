@@ -49,19 +49,6 @@ header nav img {
     height: 8em;
 }
 
-.contenedorCarrito {
-
-    background-color: black;
-    border-radius: 2em;
-
-}
-
-#carritoDeCompras {
-    filter: invert(1);
-
-}
-
-
 header nav div {
     display: flex;
     align-items: center;
@@ -69,17 +56,12 @@ header nav div {
 
 }
 
-#gamesCounter {
-
-    background-color: rgb(138, 43, 226);
-    border-radius: 100%;
-    display: inline-block;
-    width: 1em;
-    aspect-ratio: 1;
-    text-align: center;
-    line-height: 1;
-    position: absolute;
-
+#contenedorPrincipal{
+    display: flex;
+    align-self: center;
+    background: red;
+    min-width: 80vw;
+    min-height: 71.9vh;
 }
 
 
@@ -91,14 +73,8 @@ footer {
     color: rgba(255, 255, 255, 0.733);
 
 }
-@media screen and (min-width: 360px){
-    .contenedorCarrito {
-        margin-left: 7em;
-        position: fixed;
-        border-radius: 2em;
-    }
+/*Query*/
 
-}
 @media screen and (min-width: 375px) {
     .contenedorCarrito {
         margin-left: 8em;
