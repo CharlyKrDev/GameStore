@@ -90,33 +90,33 @@ if (reiniciarCompraBtn) {
                 background: "rgba(255,0,0, 0.4)",
             },
         }).showToast();
-    
-        setTimeout(function() {
+
+        setTimeout(function () {
             localStorage.clear();
             location.reload();
         }, 1000);
     });
 }
 const btnCompra = document.getElementById('btnCompra');
-    if (btnCompra){
-        btnCompra.addEventListener('click', function () {
+if (btnCompra) {
+    btnCompra.addEventListener('click', function () {
 
-    Toastify({
-        text: `¡Compra realizada correctamente!`,
-        duration: 2000,
-        close: true,
-        gravity: "bottom",
-        position:'left',
-        style: {
+        Toastify({
+            text: `¡Compra realizada correctamente!`,
+            duration: 2000,
+            close: true,
+            gravity: "bottom",
+            position: 'left',
+            style: {
                 background: "rgba(0, 255, 0, 0.4)"
             },
-    }).showToast();
+        }).showToast();
 
-    setTimeout(function() {
-        localStorage.clear();
-        location.reload();
-    }, 2000 );
+        setTimeout(function () {
+            localStorage.clear();
+            location.reload();
+        }, 2000);
 
-});
-    }
+    });
+}
 

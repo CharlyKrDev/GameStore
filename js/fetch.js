@@ -6,17 +6,17 @@ function ObtenerInformacionProductos() {
 
             .then(response => {
 
-            debugger
+                debugger
 
-            if (!response.ok) {
+                if (!response.ok) {
 
-                throw new Error("Error al cargar la API, comunícate con el administrador");
+                    throw new Error("Error al cargar la API, comunícate con el administrador");
 
-            }
+                }
 
-            return response.json();
+                return response.json();
 
-        })
+            })
 
             .then(data => resolve(data))
 

@@ -92,13 +92,11 @@ footer {
 
 }
 
-@assets screen and (min-width: 375px) {
-
+@media screen and (min-width: 375px) {
     .contenedorCarrito {
         margin-left: 8em;
         position: fixed;
         border-radius: 2em;
-
     }
 
     header nav {
@@ -106,7 +104,7 @@ footer {
     }
 }
 
-@assets screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
     .contenedorCarrito {
         position: fixed;
     }
