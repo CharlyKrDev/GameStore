@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 icon: "success",
                 title: "Enviado",
                 text: "Gracias por contactarte, te responderemos en la brevedad.",
-                background: 'rgb(11, 219, 4)',
+                background: 'rgb(16, 156, 27)',
                 color: 'white',
                 position: 'top-start',
                 toast: 'position',
