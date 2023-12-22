@@ -65,7 +65,7 @@ header nav div {
     background-image: url(../assets/img/fondo2.jpeg);
     min-height: 73vh;
     width: 80%;
-    min-width: 370px;
+    min-width: 360px;
 }
 
 form{
@@ -73,7 +73,7 @@ form{
     margin-top: 3em;
     box-shadow: 0 0 20px rgb(153, 0, 255);
     border-radius: 20px;
-    min-width: 340px;
+    max-width: 340px;
     background: rebeccapurple;
 
 }
@@ -115,7 +115,7 @@ footer {
     background-color: black;
     height: 8em;
     color: rgba(255, 255, 255, 0.733);
-    min-width: 380px;
+    min-width: 360px;
 
 
 }
