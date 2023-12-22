@@ -21,6 +21,12 @@ function validarFormulario() {
             icon: "error",
             title: "Oops...",
             text: "El mensaje no puede estar vacio",
+            background: 'rgb(153, 0, 255)',
+            color: 'white',
+            position: 'top-start',
+            toast: 'position',
+  
+
         });
         return false;
     }
@@ -29,7 +35,11 @@ function validarFormulario() {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Por favor, ingrese solo letras en el campo de nombre.",
+            text: "Por favor, ingrese solo letras en el campo de nombre.",            background: 'rgb(153, 0, 255)',
+            color: 'white',
+            position: 'top-start',
+            toast: 'position',
+
         });
         return false;
     }
@@ -39,6 +49,11 @@ function validarFormulario() {
             icon: "error",
             title: "Oops...",
             text: "Por favor, ingrese solo números en el campo de número de contacto.",
+            background: 'rgb(153, 0, 255)',
+            color: 'white',
+            position: 'top-start',
+            toast: 'position',
+
         });
         return false;
     }
