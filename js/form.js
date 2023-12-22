@@ -26,23 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const phoneInput = document.getElementById('phone');
         const messageInput = document.getElementById('message');
         const emailInput = document.getElementById('email');
-
-        if (/^\s*$/.test(emailInput.value)) {
-
-            Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Complete con un e-mail valido",
-                background: 'rgb(153, 0, 255)',
-                color: 'white',
-                position: 'top-start',
-                toast: 'position',
-
-
-            });
-            return false;
-        }
-        
         
 
         if (/^\s*$/.test(messageInput.value)) {
@@ -83,6 +66,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 color: 'white',
                 position: 'top-start',
                 toast: 'position',
+
+            });
+            return false;
+        }
+        
+        if (/^\s*$/.test(emailInput.value)) {
+
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Complete con un e-mail valido",
+                background: 'rgb(153, 0, 255)',
+                color: 'white',
+                position: 'top-start',
+                toast: 'position',
+
 
             });
             return false;
