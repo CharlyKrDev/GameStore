@@ -90,8 +90,7 @@
     transition: 0.2s ease-in-out;
     height: 2em;
     border-radius: 1em;
-    font-size: 15px;
-    padding: 5px;
+
    
 }
 
@@ -101,12 +100,22 @@
 
 #reiniciarCompra{
     background-color: rgb(206, 51, 51);
+    font-size: 15px;
+    padding: 5px;
+    transition: 0.2s ease-in-out;
+     margin: 10px;
     
 
 }
 
 #reiniciarCompra:hover {
     background-color: rgb(107, 0, 128)
+}
+#btnCompra{
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+
 }
 
 header {
