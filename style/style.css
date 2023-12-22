@@ -78,12 +78,13 @@ main span {
     border: solid rgb(153, 0, 255) .1em;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
+    font-weight: bold;
 }
 
 
 .cardsCatalogoJuegos button {
 
-    background-color: #494747;
+    background-color: rgb(75, 39, 110);
     width: 100px;
     height: 3.5em;
     border-radius: 10px;

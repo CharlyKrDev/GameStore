@@ -65,7 +65,7 @@ header nav img {
 header nav div {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
 
 }
 
