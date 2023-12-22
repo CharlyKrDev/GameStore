@@ -85,7 +85,7 @@ form {
     cursor: pointer;
 }
 hover:.btnSend{
-    background:rebeccapurple;
+    background-color:pink;
 }
 
 h2 {
