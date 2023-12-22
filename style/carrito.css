@@ -91,6 +91,7 @@
     height: 2em;
     border-radius: 1em;
     font-size: 15px;
+    padding: 5px;
 }
 
 & button:hover {
