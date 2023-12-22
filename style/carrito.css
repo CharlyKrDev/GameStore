@@ -84,16 +84,17 @@
 
 & button {
     margin: .2em;
-    color: rgba(255, 255, 255, 0.733);
-    background-color: #494747;
+    color: rgb(255, 255, 255);
+    background-color: #19910e;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     height: 2em;
     border-radius: 1em;
+    font-size: 15px;
 }
 
 & button:hover {
-    background-color: green
+    background-color: rgb(107, 0, 128)
 }
 
 header {
