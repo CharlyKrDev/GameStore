@@ -25,6 +25,24 @@ document.addEventListener("DOMContentLoaded", function () {
         const nameInput = document.getElementById('name');
         const phoneInput = document.getElementById('phone');
         const messageInput = document.getElementById('message');
+        const emailInput = document.getElementById('email');
+
+        if (/^\s*$/.test(emailInput.value)) {
+
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Complete con un e-mail valido",
+                background: 'rgb(153, 0, 255)',
+                color: 'white',
+                position: 'top-start',
+                toast: 'position',
+
+
+            });
+            return false;
+        }
+        
         
 
         if (/^\s*$/.test(messageInput.value)) {
@@ -56,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        if (!/^\d+$/.test(phoneInput.value)) {
+        if  (!/^\d+$/.test(phoneInput.value) || +phoneInput.value <= 0) {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
