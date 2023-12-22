@@ -19,7 +19,7 @@ function ObtenerInformacionProductos() {
 
             .then(data => resolve(data))
 
-            .catch(error => reject(error));
+            .catch(error => reject(error))
             .finally(() => {
               
                 console.log("Operación completada, independientemente del resultado");
