@@ -87,7 +87,7 @@ if (reiniciarCompraBtn) {
             close: true,
             gravity: "bottom",
             style: {
-                background: "rgba(255,0,0, 0.4)",
+                background: "rgba(255,0,0, 0.6)",
             },
         }).showToast();
 
@@ -108,7 +108,7 @@ if (btnCompra) {
             gravity: "bottom",
             position: 'left',
             style: {
-                background: "rgba(0, 255, 0, 0.4)"
+                background: "rgba(0, 255, 0, 0.6)"
             },
         }).showToast();
 

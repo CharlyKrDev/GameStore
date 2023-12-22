@@ -43,11 +43,11 @@ export function crearCatalogoJuegos(productos) {
 
             Toastify({
                 text: `¡${nombre} añadido al carrito!`,
-                duration: 1000,
+                duration: 1300,
                 close: true,
                 gravity: "top",
                 style: {
-                    background: "linear-gradient(to right, rgba(36, 36, 36, 0.4), rgba(138, 43, 226, 0.6))"
+                    background: "linear-gradient(to right, rgba(36, 36, 36, 0.6), rgba(138, 43, 226, 0.8))"
                 },
             }).showToast();
 

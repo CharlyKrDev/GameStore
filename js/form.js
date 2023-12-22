@@ -5,7 +5,18 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         if (validarFormulario()) {
-            contactForm.submit();
+            Swal.fire({
+                icon: "success",
+                title: "Enviado",
+                text: "Gracias por contactarse, te responderemos a la brevedad.",
+                background: 'rgb(11, 219, 4)',
+                color: 'white',
+                position: 'top-start',
+                toast: 'position',
+                didClose: () => {
+                    contactForm.submit();
+                }
+            });
         }
     });
 
@@ -14,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const nameInput = document.getElementById('name');
         const phoneInput = document.getElementById('phone');
         const messageInput = document.getElementById('message');
+        
 
         if (/^\s*$/.test(messageInput.value)) {
 
