@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var contactForm = document.getElementById('contactForm');
+    const contactForm = document.getElementById('contactForm');
 
     contactForm.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -14,6 +14,16 @@ function validarFormulario() {
     const nameInput = document.getElementById('name');
     const phoneInput = document.getElementById('phone');
     const messageInput = document.getElementById('message');
+
+    if (/^\s*$/.test(messageInput.value)){
+
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "El mensaje no puede estar vacio",
+        });
+        return false;
+    }
 
     if (!/^[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ\s]+$/.test(nameInput.value)) {
         Swal.fire({
@@ -32,15 +42,7 @@ function validarFormulario() {
         });
         return false;
     }
-    if (/^\s*$/.test(messageInput.value)){
-
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "El mensaje no puede estar vacio",
-        });
-        return false;
-    }
+ 
 
     return true;
 }
