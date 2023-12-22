@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Swal.fire({
                 icon: "success",
                 title: "Enviado",
-                text: "Gracias por contactarse, te responderemos a la brevedad.",
+                text: "Gracias por contactarte, te responderemos en la brevedad.",
                 background: 'rgb(11, 219, 4)',
                 color: 'white',
                 position: 'top-start',
