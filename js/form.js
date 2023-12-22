@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        if  (!/^\d+$/.test(phoneInput.value) || +phoneInput.value <= 0) {
+        if  (!/^[+\d]+$/.test(phoneInput.value) || +phoneInput.value <= 0) {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
