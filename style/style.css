@@ -84,15 +84,18 @@ main span {
 
 .cardsCatalogoJuegos button {
 
-    background-color: rgb(75, 39, 110);
+    background-color: rgb(215 74 211);
     width: 100px;
     height: 3.5em;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 11px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     margin: .5em auto 2em auto;
-    color: rgba(255, 255, 255, 0.733);
+    color: rgba(255, 255, 255);
+    font-family: 'Press start 2p';
+
+
 
 }
 
