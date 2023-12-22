@@ -119,12 +119,17 @@ footer {
 
 
 }
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 389px) {
+    form {
+        margin-top: 0em;
+    }
+}
+
+
+@media screen and (width: 540px) {
     form {
         margin-top: 0em;
         margin-bottom: 0em;
     }
 }
-
-
-
