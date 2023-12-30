@@ -26,6 +26,7 @@ function crearCatalogoJuegos() {
             buttonMenos.addEventListener('click', () => {
                 restarAlCarrito(producto);
                 actualizarTotales();
+                crearCatalogoJuegos();
             });
 
             const spanContador = document.createElement('span');
@@ -38,6 +39,7 @@ function crearCatalogoJuegos() {
             buttonMas.addEventListener('click', () => {
                 agregarAlCarrito(producto);
                 actualizarTotales();
+                crearCatalogoJuegos();
             });
 
             nuevosJuegos.appendChild(imgElement);
@@ -51,6 +53,7 @@ function crearCatalogoJuegos() {
 
         contenedorCatalogo.append(...nuevosJuegosArray);
     } else {
+
         carritoVacioElement.textContent = "No hay juegos en el carrito, APROVECHA alguna oferta!";
     }
 
@@ -58,6 +61,7 @@ function crearCatalogoJuegos() {
 }
 
 crearCatalogoJuegos();
+actualizarTotales();
 
 function actualizarTotales() {
     const productos = JSON.parse(localStorage.getItem('juegosList'));
@@ -65,23 +69,14 @@ function actualizarTotales() {
     let precioTotal = 0;
 
     if (productos && productos.length > 0) {
-        const spanContadores = document.querySelectorAll('.contador');
-
         productos.forEach(producto => {
             unidades += producto.cantidad;
             precioTotal += producto.precioVigente * producto.cantidad;
         });
-
-        unidadesElement.innerText = unidades;
-        precioTotalElement.innerText = precioTotal;
-
-        spanContadores.forEach((spanContador, index) => {
-            spanContador.textContent = productos[index].cantidad > 0 ? `${productos[index].cantidad}` : '';
-        });
-    } else {
-        unidadesElement.innerText = 0;
-        precioTotalElement.innerText = 0;
     }
+
+    unidadesElement.innerText = unidades;
+    precioTotalElement.innerText = precioTotal;
 }
 
 const reiniciarCompraBtn = document.getElementById('reiniciarCompra');
@@ -99,14 +94,14 @@ if (reiniciarCompraBtn) {
 
         setTimeout(function () {
             localStorage.clear();
-            crearCatalogoJuegos();
+            location.reload();
         }, 1000);
     });
 }
-
 const btnCompra = document.getElementById('btnCompra');
 if (btnCompra) {
     btnCompra.addEventListener('click', function () {
+
         Toastify({
             text: `¡Compra realizada correctamente!`,
             duration: 2000,
@@ -115,4 +110,14 @@ if (btnCompra) {
             position: 'left',
             style: {
                 background: "rgba(0, 255, 0, 0.6)"
-      
+            },
+        }).showToast();
+
+        setTimeout(function () {
+            localStorage.clear();
+            location.reload();
+        }, 2000);
+
+    });
+}
+
