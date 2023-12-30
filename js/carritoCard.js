@@ -75,10 +75,8 @@ function actualizarTotales() {
         unidadesElement.innerText = unidades;
         precioTotalElement.innerText = precioTotal;
 
-      
-        productos.forEach((producto, index) => {
-            const spanContador = spanContadores[index];
-            spanContador.textContent = producto.cantidad > 0 ? `${producto.cantidad}` : '';
+        spanContadores.forEach((spanContador, index) => {
+            spanContador.textContent = productos[index].cantidad > 0 ? `${productos[index].cantidad}` : '';
         });
     } else {
         unidadesElement.innerText = 0;
@@ -117,12 +115,4 @@ if (btnCompra) {
             position: 'left',
             style: {
                 background: "rgba(0, 255, 0, 0.6)"
-            },
-        }).showToast();
-
-        setTimeout(function () {
-            localStorage.clear();
-            crearCatalogoJuegos();
-        }, 2000);
-    });
-}
+      
