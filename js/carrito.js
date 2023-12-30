@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 export function agregarAlCarrito(producto) {
     const preCargado = JSON.parse(localStorage.getItem('juegosList'));
-    console.log(preCargado);
     let cuenta = 0;
 
     if (!preCargado) {
@@ -26,15 +25,16 @@ export function agregarAlCarrito(producto) {
         cuenta = 1;
     } else {
         const indiceJuegos = preCargado.findIndex(juegosList => juegosList.id === producto.id);
-        console.log(indiceJuegos);
-        const sumaCompra = preCargado;
+        const sumaCompra = preCargado.slice();
+
         if (indiceJuegos === -1) {
             sumaCompra.push(getNuevoJuegoAlCarrito(producto));
-            cuenta = 1
+            cuenta = 1;
         } else {
             sumaCompra[indiceJuegos].cantidad++;
             cuenta = sumaCompra[indiceJuegos].cantidad;
         }
+
         localStorage.setItem('juegosList', JSON.stringify(sumaCompra));
     }
 
@@ -45,19 +45,18 @@ export function agregarAlCarrito(producto) {
 export function restarAlCarrito(producto) {
     const preCargado = JSON.parse(localStorage.getItem('juegosList'));
     const indiceJuegos = preCargado.findIndex(juegosList => juegosList.id === producto.id);
+
     if (preCargado[indiceJuegos].cantidad === 1) {
         preCargado.splice(indiceJuegos, 1);
     } else {
         preCargado[indiceJuegos].cantidad--;
     }
+
     localStorage.setItem('juegosList', JSON.stringify(preCargado));
     actualizarCantDejuegos();
-
 }
 
 function getNuevoJuegoAlCarrito(producto) {
-    const listaDeCompras = producto;
-    listaDeCompras.cantidad = 1;
+    const listaDeCompras = { ...producto, cantidad: 1 };
     return listaDeCompras;
 }
-
